@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script async src="js/App.js"></script>
+</head>
+
+<body class="page__body">
+    <div class="app">
+        <div class="app__inner-part">
+            <div class="app__item">
+                <p class="app__text">Выберите пол</p>
+                <form class="app__form">
+                    <div>
+                        <input type="radio" name="gender" id="male" value="Male" class="app__radio-button"></input>
+                        <label for="">Мужской</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="Female" class="app__radio-button"></input>
+                        <label for="">Женский</label>
+                    </div>
+                </form>
+            </div>
+            <div class="app__item">
+                <p class="app__text">Укажите возраст</p>
+                <form action="" class="app-form">
+                    <input type="text" class="app__input" placeholder="0" maxlength="2">
+                </form>
+            </div>
+            <button class="button app__button">Узнать, пенсионер ли я!</button>
+        </div>
+        <div class="circle circle_hidden">
+            <p class="circle__text"></p>
+        </div>
+    </div>
+</body>
+
+</html>

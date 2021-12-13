@@ -1,0 +1,151 @@
+/* Link */
+
+.link {
+    color: var(--secondary-color);
+    display: block;
+    position: relative;
+    text-decoration: 0;
+    width: max-content;
+}
+
+.link::before {
+    background-color: var(--secondary-color);
+    content: '';
+    height: 1.5px;
+    position: absolute;
+    bottom: -5%;
+    width: 0;
+}
+
+.link:hover {
+    color: var(--tertiary-color);
+}
+
+.link:hover::before {
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+
+/* Buttons */
+
+.button {
+    background-color: var(--primary-transparent-color);
+    border: 1.05px solid var(--accent-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding: .65em .95em;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* App */
+
+.app {
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5em 0;
+}
+
+.app__text {
+    font-size: 3.75rem;
+}
+
+.app__block {
+    display: flex;
+}
+
+.app__radio-button {
+    margin-right: .5em;
+}
+
+.app__text {
+    font-weight: 200;
+    margin-bottom: .5em;
+}
+
+.app__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+    padding: 0 .75em;
+}
+
+.app__form > div {
+    margin-bottom: .5em;
+}
+
+.app__item {
+    margin-bottom: 1.5em;
+}
+
+.app__input {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    display: flex;
+    font-size: 5rem;
+    font-weight: 100;
+    outline: none;
+    width: 1.5em;
+}
+
+.app__input::-webkit-input-placeholder {
+    text-align: center;
+}
+ 
+.app__input:-moz-placeholder {
+    text-align: center;  
+}
+ 
+.app__input::-moz-placeholder {
+    text-align: center;  
+}
+ 
+.app__input:-ms-input-placeholder {  
+    text-align: center; 
+}
+
+.app__button {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 1.25em 2.5em;
+}
+
+/* Circle */
+
+.circle {
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    left: 42.5em;
+    position: absolute;
+    top: -25em;
+    width: 900px
+}
+
+.circle_hidden {
+    right: -45em;
+    top: -45em;
+}
+
+.circle__text {
+    font-size: 4.25rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 2.25em;
+    position: relative;
+    right: .5em;
+    top: 2.5em;
+}

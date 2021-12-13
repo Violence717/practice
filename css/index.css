@@ -1,0 +1,12 @@
+/* General styles */
+
+@import url('../css/fonts.css');
+@import url('../css/variables.css');
+@import url('../css/reset.css');
+
+/* App.css */
+
+@import url('../css/app.css');
+
+/* Modules */
+

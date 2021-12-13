@@ -1,0 +1,101 @@
+/* Scroll styles */
+
+    /* WebKit Browsers*/
+    
+    .page::-webkit-scrollbar {
+        background-color: var(--primary-color);
+        width: 5px;
+    }
+
+    .page::-webkit-scrollbar-thumb {
+        background-color: var(--accent-color);
+    }
+
+    /* Mozilla Firefox */
+
+    .page,
+    .page__body {
+        scrollbar-color: var(--accent-color) var(--primary-color);
+        scrollbar-width: thin;
+    }
+
+/* Reset default styles */
+
+*,
+*::before,
+*::after {
+    border: 0;
+    box-sizing: border-box;
+
+    /* Text styles */
+
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    font-size: 1.085rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+
+    margin: 0;
+    padding: 0;
+
+    transition: .085s linear;
+}
+
+/* Page */
+
+.page__body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 1.25;
+    min-height: 200vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Lists */
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+/* Image */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3.0rem;
+}
+
+h4 {
+    font-size: 2.75rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-size: 1.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0 !important;
+      animation-iteration-count: 0 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0 !important;
+    }
+}
